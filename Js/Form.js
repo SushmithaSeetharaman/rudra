@@ -25,6 +25,14 @@ class Form {
 
             player.name = this.input.value();
             playerCount += 1;
+            if(playerCount==1){
+                player.x = 100;
+                player.y = 100
+            }
+            if(playerCount==2){
+                player.x = 100;
+                player.y = 200
+            }
             player.index = playerCount;
             player.update();
             player.updateCount(playerCount)
